@@ -6,7 +6,7 @@ re-enable the AC and DC power outputs when the mains power turns on again.
 
 This project communicates to an EB3A via bluetooth and, once per minute, turns on
 the AC and DC power outputs. It also grants MQTT control and monitoring to everything
-exposed on the EB3A's bluetooth interface.
+exposed on the EB3A's Bluetooth interface.
 
 ![A screenshot of a Home Assistant panel showing the available settings and sensors on the battery.](image.png)
 
@@ -21,6 +21,10 @@ Set your ESPHOME OTA password, wifi and MQTT credentials as required.
 This prioritises the Bluetooth connection over WiFi, as the WiFi might be down when
 recovering from a power outage. It doesn't enable the WiFi until the Bluetooth has
 connected.
+
+The code is written to run on an M5Atom S3 Lite, but should run on basically any
+ESP32 with minor modifications. You might have to remove the Bluetooth status LED and
+change the `board` type to match your hardware.
 
 ## Extra
 
