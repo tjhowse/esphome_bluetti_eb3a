@@ -8,6 +8,8 @@ This project communicates to an EB3A via bluetooth and, once per minute, turns o
 the AC and DC power outputs. It also grants MQTT control and monitoring to everything
 exposed on the EB3A's bluetooth interface.
 
+![A screenshot of a Home Assistant panel showing the available settings and sensors on the battery.](image.png)
+
 ## Setup
 
 Find your battery's Bluetooth MAC address with the 'nRF Connect' app on your phone,
